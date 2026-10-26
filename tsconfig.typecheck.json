@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@mookacode/protocol": ["packages/protocol/src/index.ts"],
+      "@mookacode/core": ["packages/core/src/index.ts"],
+      "@mookacode/core/*": ["packages/core/src/*"]
+    },
+    "types": ["node"]
+  },
+  "include": ["packages/**/*.ts", "scripts/**/*.mjs", "vitest.config.ts"],
+  "exclude": ["**/node_modules", "**/dist"]
+}

@@ -1,0 +1,53 @@
+{
+  "name": "mookacode",
+  "version": "0.1.0",
+  "description": "Local-first AI coding agent for the terminal: reads your project, edits files, runs commands, uses Git, MCP and LSP.",
+  "keywords": [
+    "ai",
+    "agent",
+    "cli",
+    "coding-agent",
+    "llm",
+    "anthropic",
+    "openai",
+    "ollama",
+    "mcp",
+    "lsp",
+    "terminal",
+    "developer-tools"
+  ],
+  "license": "MIT",
+  "author": "MookaCode contributors",
+  "homepage": "https://github.com/fraer-techet/mookacode#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fraer-techet/mookacode.git",
+    "directory": "packages/cli"
+  },
+  "bugs": {
+    "url": "https://github.com/fraer-techet/mookacode/issues"
+  },
+  "type": "module",
+  "bin": {
+    "mookacode": "./dist/mookacode.cjs"
+  },
+  "files": [
+    "dist/mookacode.cjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.11"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "node ../../scripts/build-cli.mjs",
+    "prepublishOnly": "node ../../scripts/build-cli.mjs"
+  },
+  "devDependencies": {
+    "@mookacode/core": "workspace:*",
+    "@mookacode/protocol": "workspace:*"
+  }
+}
