@@ -56,10 +56,10 @@ npx mookacode "объясни структуру проекта"
 
 ```bash
 # Linux / macOS
-curl -fsSL https://raw.githubusercontent.com/fraer-techet/mookacode/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/fraer-techet/MookaCode-CLI/main/install.sh | bash
 
 # Windows (PowerShell)
-irm https://raw.githubusercontent.com/fraer-techet/mookacode/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/fraer-techet/Mookacode-CLI/main/install.ps1 | iex
 ```
 
 Скрипты скачивают последний релиз, проверяют SHA-256 и ставят обёртку `mookacode` в `~/.local/bin` (Linux/macOS) или `%LOCALAPPDATA%\MookaCode\bin` (Windows). Нужен только Node.js — Rust, компиляторы и права администратора не требуются.
