@@ -14,7 +14,7 @@
 
 set -euo pipefail
 
-REPO="${MOOKACODE_REPO:-fraer-techet/mookacode}"
+REPO="${MOOKACODE_REPO:-fraer-techet/Mookacode-CLI}"
 VERSION="${MOOKACODE_VERSION:-latest}"
 INSTALL_DIR="${MOOKACODE_INSTALL_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/mookacode}"
 BIN_DIR="${MOOKACODE_BIN_DIR:-$HOME/.local/bin}"
